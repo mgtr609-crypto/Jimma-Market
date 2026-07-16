@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+}
+
+h1 {
+    color: green;
+}
+
+form {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+#productList {
+    margin-top: 20px;
+}
+
+#productList div {
+    background: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#productList img {
+    width: 150px;
+    border-radius: 8px;
+}

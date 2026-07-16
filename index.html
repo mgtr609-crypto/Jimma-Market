@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jimma Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Jimma Market</h1>
+<input
+    type="text"
+    id="search"
+    placeholder="Search products..."
+    onkeyup="searchProducts()">
+<br><br>
+<form id="productForm">
+    <input type="text" id="name" placeholder="Product Name" required><br><br>
+
+    <input type="number" id="price" placeholder="Price" required><br><br>
+
+    <input type="file" id="photo" accept="image/*" required><br><br>
+
+    <button type="submit">Upload</button>
+</form>
+
+<hr>
+
+<div id="productList"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
