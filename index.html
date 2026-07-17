@@ -1,157 +1,120 @@
- <!DOCTYPE <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="am">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jimma Market</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jimma Market</title>
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<div class="login-box">
-    <h2>Login</h2>
 
-    <input type="email" id="email" placeholder="Email">
-
-    <input type="password" id="password" placeholder="Password">
-
-    <button onclick="login()">Login</button>
-
-    <button onclick="register()">Register</button>
-
-    <button onclick="logout()">Logout</button>
-</div>
-
-<script src="auth.js"></script><section class="cart">
-
-<h2>🛒 Shopping Cart</h2>
-
-<ul id="cart-items"></ul>
-
-<h3>Total: <span id="total">0</span> ETB</h3>
-
-</section>
 <body>
 
 <header class="header">
-    <h1>🛒 Jimma Market</h1>
+  <div class="logo">
+    🛒 <h1>Jimma Market</h1>
+  </div>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Categories</a>
-        <a href="#">Contact</a>
-        <a href="#">Login</a>
-    </nav>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <a href="#login">Login</a>
+  </nav>
 </header>
 
 <section class="hero">
+  <h2>Welcome to Jimma Market</h2>
+  <p>Buy and Sell Everything Easily</p>
 
-<img src="habte.jpg" class="profile">
-
-<h2>Welcome to Jimma Market</h2>
-
-<p>Buy and Sell Everything Easily</p>
-
-<a href="#products" class="btn">Shop Now</a>
-
+  <a href="#products" class="btn">
+    Shop Now
+  </a>
 </section>
 
-<section class="search">
-
-<input
-type="text"
-id="search"
-placeholder="Search Products..."
-onkeyup="searchProducts()">
-
-</section>
-
-<section id="products" class="products">
-
-<!-- Products will appear here -->
-
-</section>
-
-<script src="script.js"></script>
-
-</body>
-</html>>
-<<button onclick="window.location.href='tel:+251924381526'">
-  ግዛ
-</button>>
-<head>
-    <meta charset="UTF-8">
-    <title>Jimma Market</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<h1>Jimma Market</h1>
-<input
+<section class="search-box">
+  <input
     type="text"
     id="search"
     placeholder="Search products..."
     onkeyup="searchProducts()">
-<br><br>
+</section>
+
+<section id="products" class="products">
+
+</section>
+
+<section class="cart">
+  <h2>🛒 Shopping Cart</h2>
+
+  <div id="cart-items"></div>
+
+  <h3>Total:
+    <span id="total">0</span>
+    ETB
+  </h3>
+</section>
+<section id="login" class="login-box">
+
+<h2>Login</h2>
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<button onclick="register()">Register</button>
+
+<button onclick="logout()">Logout</button>
+
+</section>
+
+<section class="upload">
+
+<h2>Add Product</h2>
+
 <form id="productForm">
-    <input type="text" id="name" placeholder="Product Name" required><br><br>
 
-    <input type="number" id="price" placeholder="Price" required><br><br>
+<input type="text" id="name" placeholder="Product Name" required>
 
-    <input type="file" id="photo" accept="image/*" required><br><br>
+<input type="number" id="price" placeholder="Price (ETB)" required>
 
-    <button type="submit">Upload</button>
+<input type="file" id="photo" accept="image/*" required>
+
+<button type="submit">Upload Product</button>
+
 </form>
 
-<hr>
-<a href="https://wa.me/251924381526?text=ሰላም፣ ይህን ምርት መግዛት እፈልጋለሁ">
-    <button>Buy Now</button>
-</a>
+</section>
+
+<section id="contact">
+
+<h2>Contact Seller</h2>
 
 <a href="tel:+251924381526">
-    <button>Call Seller</button>
+<button>📞 Call Seller</button>
 </a>
-<div id="productList"></div>
+
+<a href="https://wa.me/251924381526?text=ሰላም፣ ይህን ምርት መግዛት እፈልጋለሁ">
+<button>💬 WhatsApp</button>
+</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 Jimma Market. All Rights Reserved.</p>
+
+</footer>
+
+<script src="auth.js"></script>
 
 <script src="script.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 
-<script src="firebase.js"></script>
-<script src="auth.js"></script>
-<script src="script.js"></script>78
 </body>
-</html><div id="login">
-  <h2>Login</h2>
-
-  <input type="email" id="email" placeholder="Email">
-  <input type="password" id="password" placeholder="Password">
-
-  <button onclick="login()">Login</button>
-</div><section class="admin">
-
-<h2>Admin Panel</h2>
-
-<input type="text" id="pname" placeholder="Product Name">
-
-<input type="number" id="pprice" placeholder="Price">
-
-<input type="text" id="pimage" placeholder="Image URL">
-
-<button onclick="addProduct()">
-Upload Product
-</button>
-
-</section><input type="file" id="imageFile" accept="image/*">
-
-<button onclick="uploadImage()">
-Upload Image
-</button>
-
-<img id="preview" width="200">
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage-compat.js"></script>
+</html>
